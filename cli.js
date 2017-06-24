@@ -1,7 +1,7 @@
 var WeatherAdmin = require("./WeatherAdmin");
 var inquirer = require("inquirer");
 
-var MyAdmin = new WeatherAdmin();
+var MyAdmin = new WeatherAdmin(askAgain);
 
 function promptUser(){
     inquirer.prompt([{
@@ -25,29 +25,30 @@ function promptUser(){
                 }
             ]).then(function(answers){
                 MyAdmin.newSearch(answers.name, answers.place);
-                //again();
             })
 
 
         }
         else if(answers.userType === "admin"){
             MyAdmin.getData();
-            //again();
         }
+ 
         
     })
+
+
 }
 
 promptUser();
 
-/*var userType = process.argv[2];
-
-if(userType === "user"){
-    var name = process.argv[3];
-    var place = process.argv[4];
-    MyAdmin.newSearch(name, place);
-
+function askAgain(){
+    inquirer.prompt([{
+        type:"confirm",
+        name:"again",
+        message:"wanna go again?"
+    }]).then(function(answers){
+        if(answers.again){
+            promptUser();
+        }
+    })
 }
-else if(userType === "admin"){
-    MyAdmin.getData();
-}*/

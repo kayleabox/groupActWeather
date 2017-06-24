@@ -4,5 +4,13 @@ john: mexicocity 2017-06-24
 jim: cairo 2017-06-24 
 john: alexandria 2017-06-24 
 kaylea: austin 2017-06-24 
-: austin 2017-06-24 
 jim: toronto 2017-06-24 
+kaylea: austin 2017-06-24 
+kaylea: austin 2017-06-24 
+kaylea: austin 2017-06-24 
+kaylea: austin 2017-06-24 
+kaylea: texarkana 2017-06-24 
+kaylea: mexicocity 2017-06-24 
+kaylea: texas 2017-06-24 
+kaylea: austin 2017-06-24 
+kaylea : cairo 2017-06-24 
